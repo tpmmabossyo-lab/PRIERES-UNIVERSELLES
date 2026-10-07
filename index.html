@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prières Universelles</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo"><span>✝</span><div><strong>Prières Universelles</strong><small>Un cœur, une foi, une seule humanité</small></div></div>
+    <nav>
+      <a class="active" href="#accueil">Accueil</a>
+      <a href="#prieres">Prières</a>
+      <a href="#versets">Versets bibliques</a>
+      <a href="#traditions">Traditions spirituelles</a>
+      <a href="#apropos">À propos</a>
+    </nav>
+    <button class="fav">♥ Favoris</button>
+  </header>
+
+  <main>
+    <section id="accueil" class="hero">
+      <img src="accueil.png" alt="La Sainte Trinité et la Vierge Marie dans une lumière dorée">
+      <div class="heroShade"></div>
+      <div class="heroText">
+        <h1>Prières<br>Universelles</h1>
+        <p>Peu importe ta foi, ton chemin,<br>tu trouveras une prière pour chaque moment de ta vie.</p>
+        <div class="cross">✦ ─ ✝ ─ ✦</div>
+      </div>
+      <div class="heroQuote">Prier,<br>c’est parler à Dieu…<br>mais aussi écouter<br>son amour.</div>
+      <form class="search" onsubmit="searchPrayer(event)">
+        <span>⌕</span>
+        <input id="searchInput" placeholder="Que recherchez-vous ? (ex : paix, famille, espoir, amour...)">
+        <button>Rechercher →</button>
+      </form>
+    </section>
+
+    <section class="quick">
+      <div><b>☀</b><h3>Prière du matin</h3><p>Commence ta journée avec la lumière.</p></div>
+      <div><b>☾</b><h3>Prière du soir</h3><p>Confie ta nuit à Sa bienveillance.</p></div>
+      <div><b>♙</b><h3>Famille</h3><p>Pour ceux que tu aimes.</p></div>
+      <div><b>◎</b><h3>Pour le monde</h3><p>Une prière pour la paix.</p></div>
+      <div><b>♡</b><h3>Moments difficiles</h3><p>Trouve la force dans la prière.</p></div>
+      <div><b>★</b><h3>Réussite & Espoir</h3><p>Ouvre ton cœur à demain.</p></div>
+    </section>
+
+    <section id="prieres" class="categories">
+      <div class="intro">
+        <h2>Nos catégories de prières</h2>
+        <p>Explore les différentes catégories pour trouver la prière qui correspond à ton besoin.</p>
+        <button onclick="showAll()">Voir toutes les prières →</button>
+      </div>
+      <div class="cards">
+        <article onclick="showPrayer('universelle')"><div class="cardImg c1"></div><h3>Prières universelles</h3><p>Pour l’humanité entière</p></article>
+        <article onclick="showPrayer('chretienne')"><div class="cardImg c2"></div><h3>Prières chrétiennes</h3><p>Foi, espérance, amour</p></article>
+        <article onclick="showPrayer('paix')"><div class="cardImg c3"></div><h3>Paix & guidance</h3><p>Pour avancer sereinement</p></article>
+        <article onclick="showPrayer('sagesse')"><div class="cardImg c4"></div><h3>Sérénité & sagesse</h3><p>Pour apaiser l’esprit</p></article>
+      </div>
+    </section>
+
+    <section id="result" class="result hidden"></section>
+
+    <section id="versets" class="goldBanner">
+      <h2>« La prière est le souffle de l’âme,<br>le lien entre la terre et le ciel. »</h2>
+      <div>— ✝ —</div>
+    </section>
+
+    <section id="traditions" class="info">
+      <h2>Un espace ouvert et respectueux</h2>
+      <p>Découvre des prières tournées vers la paix, la gratitude, l’amour, l’espérance et l’entraide, ainsi que des ressources présentant différentes traditions spirituelles avec respect.</p>
+    </section>
+
+    <section id="apropos" class="info">
+      <h2>À propos</h2>
+      <p><strong>Prières Universelles</strong> est un espace de recueillement et de découverte. Prends quelques minutes, choisis un thème et laisse la prière t’accompagner.</p>
+    </section>
+  </main>
+
+  <footer>© 2026 Prières Universelles · Un cœur, une foi, une seule humanité</footer>
+  <script src="script.js"></script>
+</body>
+</html>
